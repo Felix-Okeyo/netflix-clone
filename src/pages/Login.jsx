@@ -7,6 +7,9 @@ function Signin (){
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
 
+    // dont allow user to see the error messages on the console hence handle the errors 
+    const [error, setError] = useState('')
+
     const {user, logIn} = UserAuth()   
     const navigate = useNavigate()
 
@@ -14,11 +17,16 @@ function Signin (){
     
     const handleSubmit = async (e)=>{
         e.preventDefault()
+        // handle errors 
+        setError('')
+
         try {
             await logIn(email, password)
+
             navigate('/')
         } catch (error) {
             console.log(error)
+            setError(error.message)
         }
 }
 
@@ -32,6 +40,8 @@ function Signin (){
                     <div className='max-w-[450px] h-[600px] mx-auto bg-black/75 text-white'>
                         <div className='max-w-[320px] mx-auto py-16'>
                             <h1 className='text-3xl font-bold'> Sign In </h1>
+                            {/* display error on the screen not in the console by giving it a null  */}
+                            {error? <p> {error}</p> : null} 
                             <form onSubmit = {handleSubmit} className='w-full flex flex-col py-4'>
                                 <input onChange = {(e) => setEmail(e.target.value)} className='p-3 my-2 bg-gray-700 rounded ' type='email' placeholder = 'Email' autoComplete='email'/>
                                 <input onChange = {(e) => setPassword(e.target.value)} className='p-3 my-2 bg-gray-700 rounded ' type='password' placeholder='Password' autoComplete='current-password'/>
