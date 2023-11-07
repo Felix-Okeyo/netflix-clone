@@ -41,7 +41,7 @@ function Signin (){
                         <div className='max-w-[320px] mx-auto py-16'>
                             <h1 className='text-3xl font-bold'> Sign In </h1>
                             {/* display error on the screen not in the console by giving it a null  */}
-                            {error? <p> {error}</p> : null} 
+                            {error? <p className = 'p-3 bg-red-400 my-2'> {error}</p> : null} 
                             <form onSubmit = {handleSubmit} className='w-full flex flex-col py-4'>
                                 <input onChange = {(e) => setEmail(e.target.value)} className='p-3 my-2 bg-gray-700 rounded ' type='email' placeholder = 'Email' autoComplete='email'/>
                                 <input onChange = {(e) => setPassword(e.target.value)} className='p-3 my-2 bg-gray-700 rounded ' type='password' placeholder='Password' autoComplete='current-password'/>
