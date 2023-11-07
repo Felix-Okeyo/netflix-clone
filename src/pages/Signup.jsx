@@ -1,7 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-export const Signup = () => {
+
+function Signup (){
+
+    
   return (
     <>
         <div className='w-full h-screen'>
