@@ -3,6 +3,7 @@ import {MdChevronLeft, MdChevronRight} from 'react-icons/md';
 import {UserAuth} from '../context/AuthContext';
 import { db } from '../firebase';
 import {updateDoc, doc, onSnapshot} from 'firebase/firestore';
+import {AiOutlineClose} from 'react-icons/ai'
 //  onSnapshot in firebase basically takes a snapshot of the database at that particular moment and relay whats in it
 
 function SavedShows() {
@@ -16,6 +17,20 @@ function SavedShows() {
     const slideRight = () => {
         let slider = document.getElementById('slider');
         slider.scrollLeft = slider.scrollLeft + 500;
+    }
+
+    const movieRef = doc(db, 'users' , `${user?.email}`)
+    
+    // to delete a saved show we have to handle the deetion from the client side, then use the updateDoc to push it backend to firebase
+    const deleteShow = async(passedId) => {
+        try {
+            const updatedArray = movies.filter((item) => item.id !== passedId)
+            await updateDoc(movieRef, {
+                savedShows: updatedArray, 
+            })
+        } catch (error){
+            console.log(error)
+        }
     }
 
     //handle the snapshot logic through a useEffect
@@ -41,7 +56,7 @@ function SavedShows() {
                                             <p className='white-space-normal text-xs md:text-sm font-bold flex justify-center items-center h-full text-center'>
                                                 {item?.title}
                                             </p>
-                                
+                                            <p onClick = {() => deleteShow(item.id)} className='absolute test-gray-300 top-4 right-4'><AiOutlineClose /></p>
                                         </div>
                                 </div>
                         ))}
