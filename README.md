@@ -2,6 +2,8 @@
 
 This project is a Netflix clone app, which aims to replicate the user interface and functionality of the popular streaming platform Netflix. The app allows users to explore and watch a variety of movies and TV shows, as well as manage their accounts, authenticate, and save favorite content.
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9e0112f4-4da0-483a-b63c-93066fa92726/deploy-status)](https://app.netlify.com/sites/netflix-clone-felix-app/deploys)
+
 ![Netflix Clone App Screenshot](https://github.com/Felix-Okeyo/netflix-clone/blob/123b3eab7b3792d9174af40ba60547fe4342be37/netflix-screenshot.png)
 
 ## Table of Contents
