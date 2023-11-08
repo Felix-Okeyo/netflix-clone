@@ -2,7 +2,7 @@
 
 This project is a Netflix clone app, which aims to replicate the user interface and functionality of the popular streaming platform Netflix. The app allows users to explore and watch a variety of movies and TV shows, as well as manage their accounts, authenticate, and save favorite content.
 
-![Netflix Clone App Screenshot](https://example.com/your-screenshot-url.png)
+![Netflix Clone App Screenshot](https://drive.google.com/file/d/1tbouK45HvUWfUGOyjR4KefheG_HMFeuV/view?usp=sharing)
 
 ## Table of Contents
 
