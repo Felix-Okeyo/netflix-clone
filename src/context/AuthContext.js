@@ -3,6 +3,7 @@ import { auth, db } from '../firebase';
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword,
   signOut, onAuthStateChanged} from 'firebase/auth';
 
+  // whenever we add a new user, we want to stroe them in the cloud and initialise and array of saved movies 
 import {setDoc,doc} from 'firebase/firestore'
 
 const AuthContext = createContext();
@@ -10,6 +11,7 @@ const AuthContext = createContext();
 export function AuthContextProvider({ children }) {
   const [user, setUser] = useState({});
 
+  // whenever we run the function when signing up, we create a user's file and email 
   function signUp(email, password) {
     createUserWithEmailAndPassword(auth, email, password);
     setDoc(doc(db, 'users', email), {
