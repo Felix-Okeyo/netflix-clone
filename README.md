@@ -103,7 +103,7 @@ To run the Netflix clone app locally, follow these steps:
 
 cd netflix-clone
 
-Install the project dependencies:
+## Install the project dependencies:
 
 bash
 
@@ -117,7 +117,7 @@ bash
 
     Open your web browser and access the app at http://localhost:3000.
 
-Usage
+## Usage
 
     Navigate to the Netflix clone app at http://localhost:3000.
 
@@ -127,7 +127,7 @@ Usage
 
     Click on individual items to view more details and enjoy streaming content.
 
-Built With
+## Built With
 
     React - JavaScript library for building user interfaces.
 
@@ -141,7 +141,7 @@ Built With
 
     The Movie Database (TMDb) API - Source of movie and TV show data.
 
-Contributing
+## Contributing
 
 Contributions to this project are welcome. If you have suggestions, improvements, or bug fixes, please feel free to submit a pull request.
 License
@@ -153,4 +153,3 @@ Special thanks to the creators of Netflix for their inspirational design and use
 
 Note: To access movie data, users are required to obtain their own API keys by registering with The Movie Database (TMDb) API. Visit TMDb's API documentation to register and obtain your API keys.
 
-Enjoy streaming your favorite movies and TV shows on the Netflix clone app!
