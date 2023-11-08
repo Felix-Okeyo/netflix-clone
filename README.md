@@ -97,49 +97,46 @@ To run the Netflix clone app locally, follow these steps:
    ```bash
    git clone https://github.com/your-username/netflix-clone.git
 
-    Change to the project directory:
+2. Change to the project directory:
 
-    bash
+    ```bash
+   cd netflix-clone
 
-cd netflix-clone
+3. Install the project dependencies:
 
-## Install the project dependencies:
+   ```bash
+   npm install
 
-bash
+4. Start the development server:
 
-npm install
+   ```bash
+   npm start
 
-Start the development server:
-
-bash
-
-    npm start
-
-    Open your web browser and access the app at http://localhost:3000.
+5. Open your web browser and access the app at http://localhost:3000.
 
 ## Usage
 
-    Navigate to the Netflix clone app at http://localhost:3000.
+   - Navigate to the Netflix clone app at http://localhost:3000.
 
-    Explore the available content categories on the home page.
+   - Explore the available content categories on the home page.
 
-    Sign in or sign up to access user-specific features and save favorite movies and TV shows.
+   - Sign in or sign up to access user-specific features and save favorite movies and TV shows.
 
-    Click on individual items to view more details and enjoy streaming content.
+   - Click on individual items to view more details and enjoy streaming content.
 
 ## Built With
 
-    React - JavaScript library for building user interfaces.
+   - React - JavaScript library for building user interfaces.
 
-    React Router - Routing library for React.
+   - React Router - Routing library for React.
 
-    Firebase - Backend services for authentication and Cloud Firestore.
+   - Firebase - Backend services for authentication and Cloud Firestore.
 
-    Axios - Promise-based HTTP client for making network requests.
+   - Axios - Promise-based HTTP client for making network requests.
 
-    Tailwind CSS - Utility-first CSS framework for styling.
+   - Tailwind CSS - Utility-first CSS framework for styling.
 
-    The Movie Database (TMDb) API - Source of movie and TV show data.
+   - The Movie Database (TMDb) API - Source of movie and TV show data.
 
 ## Contributing
 
