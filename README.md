@@ -146,8 +146,9 @@ bash
 Contributions to this project are welcome. If you have suggestions, improvements, or bug fixes, please feel free to submit a pull request.
 License
 
-This project is open-source and available under the MIT License.
-Acknowledgments
+This project is open-source and available under the [MIT License](https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt).
+
+## Acknowledgments
 
 Special thanks to the creators of Netflix for their inspirational design and user experience. This project is a demonstration of frontend development skills and is not affiliated with Netflix.
 
