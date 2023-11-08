@@ -33,7 +33,10 @@ function Signin (){
     <>
         <div className='w-full h-screen'>
             <img 
-            className= 'hidden sm:block absolute w-full h-full object-cover' src="https://assets.nflxext.com/ffe/siteui/vlv3/a73c4363-1dcd-4719-b3b1-3725418fd91d/1504aeb0-7b37-4f92-8d41-8fcb7477a7b1/KE-en-20231016-popsignuptwoweeks-perspective_alpha_website_large.jpg" alt="/"/>
+            className= 'hidden sm:block absolute w-full h-full object-cover' 
+            src="https://assets.nflxext.com/ffe/siteui/vlv3/a73c4363-1dcd-4719-b3b1-3725418fd91d/1504aeb0-7b37-4f92-8d41-8fcb7477a7b1/KE-en-20231016-popsignuptwoweeks-perspective_alpha_website_large.jpg" 
+            alt="home page"
+            />
             <div className='bg-black/60 fixed top-0 left-0 w-full h-screen'>
                 <div className='fixed w-full px-4 py-24 z-50'>
                     <div className='max-w-[450px] h-[600px] mx-auto bg-black/75 text-white'>
