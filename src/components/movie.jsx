@@ -10,6 +10,8 @@ function Movie ({item}){
     const [saved, setSaved] = useState(false)
     const {user} = UserAuth()
 
+    
+
     //reference the users db in firebase cloud firestore then we want to grab the user's email through optional chaining
     const movieID = doc(db, 'users', `${user?.email}`)
 
@@ -24,11 +26,14 @@ function Movie ({item}){
                     img: item.backdrop_path
                 })
             }
+            
                 )
         } else {
             alert('Please sign in and select a movie.')
+            console.log(saved)
         }
     }
+    
 
     return (
         <div className='w-[160px] sm:w-[200px] md:w-[240px] lg:w-[280px] inline-block cursor-pointer relative p-2'>

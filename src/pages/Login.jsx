@@ -26,6 +26,7 @@ function Signin (){
         } catch (error) {
             console.log(error)
             setError(error.message)
+            console.log(user)
         }
 }
 

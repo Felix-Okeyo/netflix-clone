@@ -19,6 +19,7 @@ function Signup() {
             navigate('/')
         } catch (error) {
             console.log(error)
+            console.log(user)
         }
 }
     
