@@ -151,5 +151,5 @@ Acknowledgments
 
 Special thanks to the creators of Netflix for their inspirational design and user experience. This project is a demonstration of frontend development skills and is not affiliated with Netflix.
 
-Note: To access movie data, users are required to obtain their own API keys by registering with The Movie Database (TMDb) API. Visit TMDb's API documentation to register and obtain your API keys.
+Note: To access movie data, users are required to obtain their own API keys by registering with [The Movie Database (TMDb) API](https://developer.themoviedb.org/docs). Visit TMDb's API documentation  to register and obtain your API keys.
 
